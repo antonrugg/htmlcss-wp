@@ -1,0 +1,118 @@
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    height: 100%;
+    width: 100%;
+    margin: auto;
+    /* border: 2px dashed red; */
+}
+
+nav{
+    width: 80%;
+    /* height: 10vh; */
+    margin: auto;
+    /* background-color: palevioletred; */
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+#logo-image{
+    width: 15%;
+    margin-top: 0.8rem;
+    border-right: 1px solid gray;
+    padding-right: 3rem;
+}
+
+ul > li{
+    display: inline-block;
+    margin: 10px 5px 10px 0px;
+    padding: 1rem 1rem 0rem 0rem;
+}
+
+.nav-menu a {
+    text-decoration: none;
+    color: gray;
+    text-transform: uppercase;
+    font-weight: 400;
+    font-family: 'Lato', sans-serif;
+    font-size: 18px;
+}
+
+main{
+    width: 80%;
+    height: 60vh;
+    margin: auto;
+    background-image: url("../imgs/banner.jpg");
+    background-repeat: no-repeat;
+    background-size: 100%;
+    background-position: center;
+    margin-bottom: 1rem;
+    border-radius: 0.5rem;
+}
+
+/* #banner-main-img{
+    width: 100%;
+    height: 600px;
+} */
+
+
+header{
+    width: 80%;
+    height: 10vh;
+    background-color: skyblue;
+    margin: auto;
+    border-bottom: 20px solid blue;
+}
+
+.sub-container{
+    width: 80%;
+    /* border: 2px dashed green; */
+    height: 70vh;
+    margin: auto;
+    margin-bottom: 0.4rem;
+    border-bottom: 15px solid blue;
+}
+
+
+
+aside{
+    float: left;
+    width: 15%;
+    height: 100%;
+    background-color: skyblue;                            
+    border-right: 15px solid blue;
+    border-left: 15px solid blue;
+}
+
+article{
+    float: left;
+    width: 70%;
+    height: 100%;
+    background-color: skyblue;
+   
+}
+
+footer{
+    width: 80%;
+    height: 6vh;
+    background-color: blueviolet;
+    margin: auto;
+    margin-bottom: 1.5rem;
+}
+
+/* refactoring needed - recursive code - see border, margin, bg-color, float */
+
+
+/* If an element is taller than the element containing it, and it is floated, it will overflow outside of its container. */
+/* use this to fix: */
+
+.clearfix::after{
+    content: "";
+    clear: both;
+    display: table;
+}
+    
