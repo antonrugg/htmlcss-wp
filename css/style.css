@@ -48,7 +48,6 @@ main{
     background-size: 100%;
     background-position: center;
     margin-bottom: 1rem;
-    border-radius: 0.5rem;
     position: relative;
 }
 
@@ -56,6 +55,7 @@ main{
     background-color: rgba(0,0,0,0.2);
     height: 100%;
     width: 100%;
+    
 }
 
 .banner-text{
@@ -70,10 +70,20 @@ main{
 
 header{
     width: 80%;
-    height: 10vh;
-    background-color: skyblue;
+    /* background-color: skyblue; */
     margin: auto;
     border-bottom: 20px solid blue;
+    padding: 0.5rem 0rem 1.5rem;
+}
+
+header > h2{
+    font-size: 30px;
+    font-weight: bold;
+}
+
+header > p{
+    font-size: 16px;
+    color: gray;
 }
 
 .sub-container{
